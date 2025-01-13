@@ -1,0 +1,85 @@
+body {
+  font-family: "Roboto", serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.post {
+  width: 400px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.678);
+}
+
+/* ENCABEZADO */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.user-info i {
+  font-size: 24px;
+}
+
+.user-info div {
+  font-size: 14px;
+}
+
+.user-info span {
+  display: block;
+  font-size: 12px;
+  color: #888;
+}
+
+.options i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* IMAGEN */
+.post-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* ICONOS */
+.post-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.post-icons .interactions i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.post-icons .save i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* DESCRIPCIÓN */
+.post-body {
+  padding: 0 15px 15px;
+}
+
+.post-body p {
+  margin: 10px 0;
+  font-size: 12px;
+}
