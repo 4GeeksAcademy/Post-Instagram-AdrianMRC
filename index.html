@@ -18,13 +18,13 @@
 
  let currentImageIndex = parseInt(localStorage.getItem('currentImageIndex')) || 0;
 
-function changeImage() {
+function cambiarImagen() {
   document.getElementById('post-img').src = imageUrls[currentImageIndex];
   
   currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
   localStorage.setItem('currentImageIndex', currentImageIndex);
 }
-    window.onload = changeImage;
+    window.onload = cambiarImagen;
   </script>
 </head>
 <body>
