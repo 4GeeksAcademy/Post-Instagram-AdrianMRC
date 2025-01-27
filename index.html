@@ -8,24 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <script>
-    const imageUrls = [
-      'https://cdn.prod.website-files.com/63a02e61e7ffb565c30bcfc7/65f143538c242942ee1aff53_cool%20landscapes.webp',
-      'https://brehonacademy.org/wp-content/uploads/2023/12/Middle-earth_lord_of_the_rings_JRR_Tolkien_set_in_cc2144ed-1eac-431b-8845-055849394ecc.webp',
-      'https://www.expedia.com/stories/wp-content/uploads/2021/09/dragonstone-1.jpg',
-      'https://i.pinimg.com/originals/cc/ff/a6/ccffa62c16228d040e600942cc44b250.jpg'
-    ];
-
- let currentImageIndex = parseInt(localStorage.getItem('currentImageIndex')) || 0;
-
-function cambiarImagen() {
-  document.getElementById('post-img').src = imageUrls[currentImageIndex];
-  
-  currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
-  localStorage.setItem('currentImageIndex', currentImageIndex);
-}
-    window.onload = cambiarImagen;
-  </script>
 </head>
 <body>
   <div class="post">
@@ -45,7 +27,7 @@ function cambiarImagen() {
 
     <!-- IMAGEN -->
     <div class="post-img">
-      <img id="post-img" src="" alt="increíbles paisajes">
+      <img id="post-img" src="https://cdn.prod.website-files.com/63a02e61e7ffb565c30bcfc7/65f143538c242942ee1aff53_cool%20landscapes.webp" >
     </div>
 
     <!-- ICONOS -->
@@ -63,7 +45,7 @@ function cambiarImagen() {
     <!-- DESCRIPCIÓN -->
     <div class="post-body">
       <p>Le gusta a <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Adrian Lovera</strong> y <strong>234.943 más</strong></p>
-      <p>Empezamos el curso de Full-Stack!!! Que alegría que alboroto el nuevo feed va como una moto. Si actualizas la pagina cambiarán las imagenes para variar un poco.<strong>#Ánimo</strong></p>
+      <p>Empezamos el curso de Full-Stack!!! Que alegría que alboroto el nuevo feed va como una moto.<strong>#Ánimo</strong></p>
     </div>
   </div>
 </body>
